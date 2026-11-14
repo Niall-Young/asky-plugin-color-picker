@@ -1,0 +1,25 @@
+{
+  "id": "color_picker",
+  "name": "屏幕取色",
+  "version": "1.0.0",
+  "apiVersion": 2,
+  "entry": "color-picker",
+  "tools": [{
+    "name": "pick",
+    "description": "选择屏幕颜色并复制 sRGB 十六进制色值",
+    "agentVisible": false,
+    "effect": "write",
+    "confirmation": "explicitDirectOtherwiseConfirm",
+    "timeoutSeconds": 240,
+    "inputSchema": {"type": "object", "properties": {}, "additionalProperties": false}
+  }],
+  "commands": [{
+    "name": "pick",
+    "title": "屏幕取色",
+    "subtitle": "Color Picker",
+    "keyword": "co",
+    "tool": "pick",
+    "mode": "action",
+    "dismissLauncher": true
+  }]
+}
